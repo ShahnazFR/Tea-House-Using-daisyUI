@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- tailwind and daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tailwind custom Color Classes-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'primary-heading-color': '#1C1C1C',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Styles -->
+    <style>
+        .font-manrope {
+            font-family: "Manrope", sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-manrope p-0 m-0 box-border">
+    <header class="container mx-auto">
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row justify-between">
+                <div
+                    class="w-full lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start justify-center lg:justify-start space-y-4">
+                    <h1 class="text-5xl lg:text-[80px] font-extrabold primary-heading-color">It's good <br>
+                        tea time at The <br> Tea House</h1>
+                    <p class="py-6 text-[#777] text-xl font-medium w-5/6">
+                        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    </p>
+                    <button
+                        class="p-5 text-white border border-[#F00] bg-gradient-to-r from-[#FF8938] to-[#F00] hover:bg-transparent text-center text-xl font-bold flex items-center justify-center rounded-xl">
+                        <p>Explore More</p> 
+                        <img src="./images/arrow.png" alt="">
+                    </button>
+                </div>
+                <div class="w-full lg:w-[48%] pt-10 lg:pt-32 relative flex flex-col justify-center items-center">
+                    <img src="./images/banner.png" class="md:w-3/5 lg:w-full" />
+                    <div class="flex flex-col items-center justify-center">
+                        <div
+                            class="lg:absolute lg:top-[480px] lg:left-16 flex p-7 gap-2 items-center justify-center bg-white shadow-lg w-64 rounded-lg">
+                            <i class="fa-solid fa-star text-[#FFF082] text-5xl"></i>
+                            <div>
+                                <h4 class="text-3xl font-extrabold primary-heading-color">5.00</h4>
+                                <p class="text-[#777] text-base font-medium">Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main></main>
+    <footer></footer>
 </body>
+
 </html>
